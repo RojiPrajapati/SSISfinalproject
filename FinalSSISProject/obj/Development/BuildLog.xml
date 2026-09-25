@@ -2,13 +2,38 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>FinalSSISProject</Name>
-    <LastWriteTime>2026-09-18T09:53:31.4365429Z</LastWriteTime>
+    <LastWriteTime>2026-09-25T05:47:52.0045351Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>LoadDimCustomer.dtsx</Name>
-      <LastWriteTime>2026-09-18T13:09:24.2076587Z</LastWriteTime>
+      <LastWriteTime>2026-09-25T05:47:51.8764407Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Package_Customers.dtsx</Name>
+      <LastWriteTime>2026-09-25T09:40:52.4512346Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Package_Products.dtsx</Name>
+      <LastWriteTime>2026-09-25T09:40:52.4301534Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Package_Stores.dtsx</Name>
+      <LastWriteTime>2026-09-25T09:40:52.473813Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Package_Sales.dtsx</Name>
+      <LastWriteTime>2026-09-25T10:02:19.8596424Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Master_Retail.dtsx</Name>
+      <LastWriteTime>2026-09-25T08:54:14.7574887Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
