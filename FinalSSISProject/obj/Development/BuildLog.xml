@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>FinalSSISProject</Name>
-    <LastWriteTime>2026-09-25T05:47:52.0045351Z</LastWriteTime>
+    <LastWriteTime>2026-09-25T12:18:37.1467232Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Package_Customers.dtsx</Name>
-      <LastWriteTime>2026-09-25T09:40:52.4512346Z</LastWriteTime>
+      <LastWriteTime>2026-09-28T14:14:30.6813488Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -33,7 +33,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Master_Retail.dtsx</Name>
-      <LastWriteTime>2026-09-25T08:54:14.7574887Z</LastWriteTime>
+      <LastWriteTime>2026-09-25T13:12:19.5047359Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

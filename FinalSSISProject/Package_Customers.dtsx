@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package_Customers"
   DTS:PackageType="5"
-  DTS:VersionBuild="29"
-  DTS:VersionGUID="{E14A3F7D-F5F4-4C82-AF1B-EE053534F837}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{EC2378C5-417B-4D68-B3AD-E84A499ED35A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -116,7 +116,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAp/NAkwV7wk+HNf7JhFsu8gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADe0DgKhRtSWSsrs3vvwXuf1GJTJbFn7x1oidDOGGWomAAAAAAOgAAAAAIAACAAAADjH0+EFwusYiIgLZBLDskpFGjvkSaMa+D5eMY89uA8jiAAAADTjgnwZVMv+NQzZ/qcNWHpbf77oBFljhg30MGbsp5Gq0AAAAD/wKUjRUxhgpYxVstgws7b2zZtlC3S/B/S2lEg7sfkEizp6RVlRJzFa/B0S24X/uL7PZQBADZSRpjYn8oivU8k</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAp/NAkwV7wk+HNf7JhFsu8gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAATSnNNrT4ldefnUEP1al1zEtM/4cLMN1WwVUaypo5h1gAAAAAOgAAAAAIAACAAAAAHw+JdV0kJqkjYFbmMApW1TMp2pBuSH5oIprmF5c6QiyAAAABYsOH7XjgSMlFE5g5Yoh0w+sT3w0QaqYZUDyqIxV5A+UAAAACyLhqbKJJfP58NFfV2ySBxmRX+LjrJbRxFNnR7OsU81KaEP10SOyD/Cld4RNXwBVa/7Ex3B1Szh7m5rzbfRUur</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -199,7 +199,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Archive Customers"
       DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <FileSystemData
@@ -218,7 +218,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="customer Audit success"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3669,7 +3669,7 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Log Customer Audit Start"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3691,7 +3691,7 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Log Customer File Import Start"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3713,7 +3713,7 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Log Customer File Import Success"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3738,7 +3738,7 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="temp error"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3755,7 +3755,7 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate Table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3956,6 +3956,10 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
           Id="Package\Log Customer File Import Success"
           TopLeft="60,771.200000000003" />
         <NodeLayout
+          Size="126.4,41.6"
+          Id="Package\temp error"
+          TopLeft="368.333313208488,111.799999222557" />
+        <NodeLayout
           Size="148,41.6"
           Id="Package\Truncate Table"
           TopLeft="104.8,161.6" />
@@ -4094,32 +4098,6 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="178.8,508.000000000001">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.000000000001"
-              Start="0,0"
-              End="0,52.500000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.500000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="126.4,41.6"
-          Id="Package\temp error"
-          TopLeft="368.333313208488,111.799999222557" />
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="178.8,101.6">
           <EdgeLayout.Curve>
@@ -4141,9 +4119,51 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="178.8,508.000000000001">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.000000000001"
+              Start="0,0"
+              End="0,52.500000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.500000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package.EventHandlers[OnError]\Execute SQL Task"
+          TopLeft="623.999991595745,112.999999210238" />
+        <NodeLayout
+          Size="200,41.6"
+          Id="Package.EventHandlers[OnError]\FST_ErrorFile_Customers"
+          TopLeft="602.9999910146,214.99999679625" />
+        <NodeLayout
+          Size="224,41.6"
+          Id="Package.EventHandlers[OnError]\SQL_FileImportFail_Customers"
+          TopLeft="641.999990433454,322.999995186925" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <TaskHost
     design-time-name="Package\Customer staging">
     <LayoutInfo>
@@ -4220,43 +4240,76 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Customer staging\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Data Flow Validation and move">
     <LayoutInfo>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="161.6,52.8"
-          Id="Package\Data Flow Validation and move\Derived Column 4"
-          TopLeft="832.232134057032,245.999996540944" />
+          Size="128.8,41.6"
+          Id="Package\Data Flow Validation and move\Union All 1"
+          TopLeft="38.1618983016604,652.052376771857" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Data Flow Validation and move\Derived Column"
           TopLeft="634.028566117371,316.595234392205" />
         <NodeLayout
-          Size="128.8,41.6"
-          Id="Package\Data Flow Validation and move\Union All 1"
-          TopLeft="38.1618983016604,652.052376771857" />
+          Size="129.6,41.6"
+          Id="Package\Data Flow Validation and move\Row Count"
+          TopLeft="107.291660804508,64.9999995479981" />
         <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\Data Flow Validation and move\Row Count 1"
-          TopLeft="64.5833298046556,363.83333081719" />
+          Size="152,41.6"
+          Id="Package\Data Flow Validation and move\OLE DB Source"
+          TopLeft="99.8749995299925,5.83333371000156" />
         <NodeLayout
-          Size="128.8,41.6"
-          Id="Package\Data Flow Validation and move\Union All 2"
-          TopLeft="786.458290363146,508.749996948987" />
-        <NodeLayout
-          Size="246.4,41.6"
-          Id="Package\Data Flow Validation and move\sourcedata sourcetable and rawdata"
-          TopLeft="483.902769449478,618.122217246062" />
+          Size="161.6,52.8"
+          Id="Package\Data Flow Validation and move\Derived Column 4"
+          TopLeft="832.232134057032,245.999996540944" />
         <NodeLayout
           Size="120,41.6"
           Id="Package\Data Flow Validation and move\Union All"
           TopLeft="47.6666867252841,653.749993358469" />
         <NodeLayout
+          Size="128.8,41.6"
+          Id="Package\Data Flow Validation and move\Union All 2"
+          TopLeft="786.458290363146,508.749996948987" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Data Flow Validation and move\Derived Column 2"
+          TopLeft="440.3142813227,343.452376849146" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Data Flow Validation and move\Derived Column 5"
+          TopLeft="1144.2857025138,196.595235286275" />
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\Data Flow Validation and move\OLE DB Destination 1"
+          TopLeft="470.485711614149,769.880941923436" />
+        <NodeLayout
+          Size="246.4,41.6"
+          Id="Package\Data Flow Validation and move\sourcedata sourcetable and rawdata"
+          TopLeft="483.902769449478,618.122217246062" />
+        <NodeLayout
           Size="171.2,41.6"
           Id="Package\Data Flow Validation and move\OLE DB Destination"
           TopLeft="47.9999998476772,472.833327646553" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Data Flow Validation and move\Derived Column 1"
+          TopLeft="267.755948250345,429.059518921387" />
         <NodeLayout
           Size="112.8,41.6"
           Id="Package\Data Flow Validation and move\Lookup"
@@ -4266,153 +4319,13 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
           Id="Package\Data Flow Validation and move\Row Count 2"
           TopLeft="749.999986340603,586.833330545988" />
         <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Data Flow Validation and move\Derived Column 2"
-          TopLeft="440.3142813227,343.452376849146" />
-        <NodeLayout
-          Size="180,41.6"
-          Id="Package\Data Flow Validation and move\OLE DB Destination 1"
-          TopLeft="470.485711614149,769.880941923436" />
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Data Flow Validation and move\Derived Column 5"
-          TopLeft="1144.2857025138,196.595235286275" />
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Data Flow Validation and move\Row Count"
-          TopLeft="107.291660804508,64.9999995479981" />
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Data Flow Validation and move\Derived Column 1"
-          TopLeft="267.755948250345,429.059518921387" />
-        <NodeLayout
-          Size="152,41.6"
-          Id="Package\Data Flow Validation and move\OLE DB Source"
-          TopLeft="99.8749995299925,5.83333371000156" />
-        <NodeLayout
           Size="153.6,41.6"
           Id="Package\Data Flow Validation and move\Conditional Split"
           TopLeft="117.29166552321,146.583331896779" />
-        <EdgeLayout
-          Id="Package\Data Flow Validation and move.Paths[ValidRows]"
-          TopLeft="145.558332189876,188.183331896779">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-29.1583321898763,106.983331386166"
-              Start="0,0"
-              End="-29.1583321898763,99.483331386166">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.7823175810497" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.7823175810497"
-                    Point2="0,28.7823175810497"
-                    Point3="-4,28.7823175810497" />
-                  <mssgle:LineSegment
-                    End="-25.1583321898763,28.7823175810497" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-25.1583321898763,28.7823175810497"
-                    Point2="-29.1583321898763,28.7823175810497"
-                    Point3="-29.1583321898763,32.7823175810498" />
-                  <mssgle:LineSegment
-                    End="-29.1583321898763,99.483331386166" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-37.9299278136882,33.7823175810497,46.7015234375,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Validation and move.Paths[Union All Output 1]"
-          TopLeft="850.858290363146,550.349996948987">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-31.6583040225433,36.4833335970011"
-              Start="0,0"
-              End="-31.6583040225433,28.9833335970011">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.2416667985005" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.2416667985005"
-                    Point2="0,18.2416667985005"
-                    Point3="-4,18.2416667985005" />
-                  <mssgle:LineSegment
-                    End="-27.6583040225433,18.2416667985005" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-27.6583040225433,18.2416667985005"
-                    Point2="-31.6583040225433,18.2416667985005"
-                    Point3="-31.6583040225433,22.2416667985005" />
-                  <mssgle:LineSegment
-                    End="-31.6583040225433,28.9833335970011" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Validation and move.Paths[Row Count Output 12]"
-          TopLeft="749.999986340603,595.622217246062">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-142.897216891125,22.5"
-              Start="0,0"
-              End="-142.897216891125,15">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-138.897216891125,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-138.897216891125,0"
-                    Point2="-142.897216891125,0"
-                    Point3="-142.897216891125,4" />
-                  <mssgle:LineSegment
-                    End="-142.897216891125,15" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Validation and move.Paths[Row Count Output 11]"
-          TopLeft="133.691664826166,405.43333081719">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,67.3999968293638"
-              Start="0,0"
-              End="0,59.8999968293638">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,59.8999968293638" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Data Flow Validation and move\Row Count 1"
+          TopLeft="64.5833298046556,363.83333081719" />
         <EdgeLayout
           Id="Package\Data Flow Validation and move.Paths[Row Count Output 1]"
           TopLeft="172.091660804508,106.599999547998">
@@ -4901,6 +4814,126 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Validation and move.Paths[ValidRows]"
+          TopLeft="145.558332189876,188.183331896779">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-29.1583321898763,106.983331386166"
+              Start="0,0"
+              End="-29.1583321898763,99.483331386166">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7823175810497" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.7823175810497"
+                    Point2="0,28.7823175810497"
+                    Point3="-4,28.7823175810497" />
+                  <mssgle:LineSegment
+                    End="-25.1583321898763,28.7823175810497" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-25.1583321898763,28.7823175810497"
+                    Point2="-29.1583321898763,28.7823175810497"
+                    Point3="-29.1583321898763,32.7823175810498" />
+                  <mssgle:LineSegment
+                    End="-29.1583321898763,99.483331386166" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-37.9299278136882,33.7823175810497,46.7015234375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Validation and move.Paths[Union All Output 1]"
+          TopLeft="850.858290363146,550.349996948987">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-31.6583040225433,36.4833335970011"
+              Start="0,0"
+              End="-31.6583040225433,28.9833335970011">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.2416667985005" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.2416667985005"
+                    Point2="0,18.2416667985005"
+                    Point3="-4,18.2416667985005" />
+                  <mssgle:LineSegment
+                    End="-27.6583040225433,18.2416667985005" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-27.6583040225433,18.2416667985005"
+                    Point2="-31.6583040225433,18.2416667985005"
+                    Point3="-31.6583040225433,22.2416667985005" />
+                  <mssgle:LineSegment
+                    End="-31.6583040225433,28.9833335970011" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Validation and move.Paths[Row Count Output 12]"
+          TopLeft="749.999986340603,595.622217246062">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-142.897216891125,22.5"
+              Start="0,0"
+              End="-142.897216891125,15">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-138.897216891125,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-138.897216891125,0"
+                    Point2="-142.897216891125,0"
+                    Point3="-142.897216891125,4" />
+                  <mssgle:LineSegment
+                    End="-142.897216891125,15" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Validation and move.Paths[Row Count Output 11]"
+          TopLeft="133.691664826166,405.43333081719">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,67.3999968293638"
+              Start="0,0"
+              End="0,59.8999968293638">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.8999968293638" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -4917,25 +4950,28 @@ LEFT JOIN dbo.DimCustomer dc ON dc.CustomerID = s.CustomerID;</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package.EventHandlers[OnError]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package.EventHandlers[OnError]\Execute SQL Task"
-          TopLeft="623.999991595745,112.999999210238" />
-        <NodeLayout
-          Size="200,41.6"
-          Id="Package.EventHandlers[OnError]\FST_ErrorFile_Customers"
-          TopLeft="602.9999910146,214.99999679625" />
-        <NodeLayout
-          Size="224,41.6"
-          Id="Package.EventHandlers[OnError]\SQL_FileImportFail_Customers"
-          TopLeft="641.999990433454,322.999995186925" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Validation and move\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimCustomer]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

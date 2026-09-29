@@ -6,15 +6,38 @@
   DTS:CreatorComputerName="ICS-LT-CFY2HK3"
   DTS:CreatorName="INFICS\roprajapati"
   DTS:DTSID="{BCCE9638-026C-46AA-90C2-5B61B7FC723A}"
+  DTS:EnableConfig="True"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="17.0.1016.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{823E1A72-4FA7-418D-B7C3-4E529F2A19D5}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{79A4AE0B-4E7B-4F53-A51E-0F6D5B459686}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SSISConfig]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7AD740DD-46BA-4DB2-8707-6FFBDEDACC1C}"
+      DTS:ObjectName="SSISConfig">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=ICS-LT-CFY2HK3\SQLEXPRESS;User ID=sa;Initial Catalog=ProductConfig;Provider=MSOLEDBSQL19.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package1-{7AD740DD-46BA-4DB2-8707-6FFBDEDACC1C}ICS-LT-CFY2HK3\SQLEXPRESS.sa;Trust Server Certificate=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Configurations>
+    <DTS:Configuration
+      DTS:ConfigurationString="SSISConfig"
+      DTS:ConfigurationType="5"
+      DTS:CreationName=""
+      DTS:DTSID="{F63B0E23-DF7F-4049-9A06-28F846E0CE17}"
+      DTS:ObjectName="XMLConfig" />
+  </DTS:Configurations>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
